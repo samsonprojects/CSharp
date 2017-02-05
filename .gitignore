@@ -241,3 +241,5 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /SubsetsExample/App.config
+*.config
+/DataStructures1/DataStructuresHashsets/ConsoleApplication2/ConsoleApplication2.sln
