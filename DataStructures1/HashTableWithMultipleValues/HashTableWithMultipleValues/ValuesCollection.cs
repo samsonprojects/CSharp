@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace HashTableWithMultipleValues
 {
+    /// <summary>
+    /// Hash-tables do not allow storing more than one value in a key.
+    /// How can we get around this restriction?
+    /// Define a class to hold multiple values in a hash-table.
+    /// </summary>
     class ValuesCollection
     {
         private List<int> KeyList;//adding an element is constant 
@@ -16,11 +22,16 @@ namespace HashTableWithMultipleValues
             return KeyList;
         }
 
+
         public ValuesCollection()
         {
             this.KeyList = new List<int>();
         }
 
+        /// <summary>
+        /// add multiple values to the list
+        /// </summary>
+        /// <param name="list"></param>
         public ValuesCollection(params int[] list)
         {
             KeyList = new List<int>();
@@ -34,15 +45,8 @@ namespace HashTableWithMultipleValues
         {
             foreach(int num in KeyList)
             {
-                Console.WriteLine(num);
+                Console.Write(num);
             }
-        }
-        static void Main(string[] args)
-        {
-            ValuesCollection TestCase1 = new ValuesCollection(1, 2, 3, 4);
-            TestCase1.PrintKeys();
-            Console.ReadLine();
-
         }
     }
 }
