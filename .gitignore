@@ -243,3 +243,7 @@ ModelManifest.xml
 /SubsetsExample/App.config
 *.config
 /DataStructures1/DataStructuresHashsets/ConsoleApplication2/ConsoleApplication2.sln
+/DataStructures1/StudentSortSolution/StudentSortSolution/Students.txt.txt
+/DataStructures1/StudentSortSolution/StudentSortSolution/MyStudents.txt
+/DataStructures1/StudentSortSolution/StudentSortSolution/Properties/AssemblyInfo.cs
+/DataStructures1/StudentSortSolution/StudentSortSolution/StudentSortSolution.csproj
