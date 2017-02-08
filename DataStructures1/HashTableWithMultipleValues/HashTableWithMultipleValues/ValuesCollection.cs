@@ -16,6 +16,7 @@ namespace HashTableWithMultipleValues
     {
         private List<int> KeyList;//adding an element is constant 
 
+        
         public List<int> AddNewkey(int NewKey)
         {
             KeyList.Add(NewKey);
@@ -38,9 +39,15 @@ namespace HashTableWithMultipleValues
             for(int i = 0; i < list.Length; i++)
             {
                 this.KeyList.Add(list[i]);
+                
             }
         }
 
+        public List<int> SortList()
+        {
+            this.KeyList.Sort();
+            return this.KeyList;
+        }
         public void PrintKeys()
         {
             foreach(int num in KeyList)

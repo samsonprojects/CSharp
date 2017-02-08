@@ -12,7 +12,7 @@ namespace HashTableWithMultipleValues
         static void Main()
         {
             ValuesCollection KeyCase1 = new ValuesCollection(1, 2, 3, 4);
-            ValuesCollection KeyCase2 = new ValuesCollection(2, 3, 4,5);
+            ValuesCollection KeyCase2 = new ValuesCollection(8, 3, 4,5);
             Dictionary<ValuesCollection, string> MyhashDict = 
                 new Dictionary<ValuesCollection, string>();
             MyhashDict.Add(KeyCase1, "Football");
@@ -28,7 +28,9 @@ namespace HashTableWithMultipleValues
             }
 
             Console.WriteLine("lucky sport for today is: {0}", MyhashDict[KeyCase2]);
-            
+
+            KeyCase2.SortList();
+            KeyCase2.PrintKeys();
             
 
 
