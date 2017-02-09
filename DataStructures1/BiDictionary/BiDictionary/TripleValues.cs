@@ -55,7 +55,22 @@ namespace BiDictionary
             }
 
         }
-       
+
+        public void SearchByKey2(string SearchKey2)
+        {
+            Dictionary<string, T> FoundVal;
+            if (K1Dict.TryGetValue(SearchKey2, out FoundVal))//get value of given key. returns a dictionary
+            {
+                //iterate through inner dictionary to print our values
+                foreach (KeyValuePair<string, T> Val in FoundVal)
+                {
+                    Console.WriteLine("Key [{0}] , Value[{1}]", Val.Key, Val.Value);
+                }
+            }
+
+
+        }
+
 
 
     }

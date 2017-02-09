@@ -14,6 +14,7 @@ namespace BiDictionary
                  new TripleValues<int>("Football", "Arsenal", 1);
 
             TestCase1.AddTriple("Soccer", "LAGalaxy", 2);
+            TestCase1.AddTriple("Rugby", "Saracens", 3);
             TestCase1.SearchByKey1("Football");
             Console.ReadLine();
         }
