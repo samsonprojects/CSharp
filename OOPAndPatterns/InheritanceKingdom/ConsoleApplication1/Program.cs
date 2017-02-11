@@ -15,30 +15,13 @@ using System.Threading.Tasks;
 /// along with their attributes and operations define the class hierarchy
 /// and create a class diagram with Visual Studio.
 /// </summary>
+/// 
 
-namespace InheritanceKingdom
+
+namespace Schools
 {
-    public class Felidae
+    class Program
     {
-        //latin for cats
-
-        private bool male;
-
-        //this constructor calls another constructor
-        public Felidae(): this(true)
-        { }
-
-        //this is the constructor that is inherited
-        public Felidae(bool male)
-        {
-            this.male = male;
-        }
-
-        public bool Male
-        {
-            get { return male; }
-            set { this.male = value; }
-        }
         
     }
 }
