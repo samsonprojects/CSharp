@@ -4,6 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// Implement a class BiDictionary<K1,K2,T>, 
+/// which allows adding triplets {key1, key2, value} and quickly search by
+/// either of the keys key1, key2 as well as searching by combination of
+/// the both keys. Note: Adding many elements with the same keys is allowed.
+/// </summary>
+
 namespace BiDictionary
 {
     public class TripleValues<T>
