@@ -77,6 +77,13 @@ namespace HumanWorker
                 Console.WriteLine("{0}: {1}",temp.GetFirstName,temp.GetNSetMark);
 
             }
+            StudentsList.Reverse();
+            Console.WriteLine("I have sorted the list in descending order");
+            foreach (Student temp in StudentsList)
+            {
+                Console.WriteLine("{0}: {1}", temp.GetFirstName, temp.GetNSetMark);
+
+            }
 
 
             Console.ReadLine();
