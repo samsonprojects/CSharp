@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace HumanWorker
 {
-    public class Worker: Human
+    public class Worker: Human,IComparable
     {
         private int wage;
 
         private int HoursWorked;
+
+        public int Wage
+        {
+            get { return this.wage; }
+        }
 
         public int GetHourRate
         {
@@ -28,6 +33,24 @@ namespace HumanWorker
         {
             this.wage = Wage;
             this.HoursWorked = HoursWorked;
+        }
+
+        public int CompareTo(object obj)
+        {
+            if(obj == null)
+            {
+                return 1;
+            }
+
+            Worker OtherWorker = obj as Worker;
+            if(OtherWorker != null)
+            {
+                return this.wage.CompareTo(OtherWorker.Wage);
+            }
+            else
+            {
+                throw new ArgumentException("Object is not a Worker");
+            }
         }
 
         /// <summary>
