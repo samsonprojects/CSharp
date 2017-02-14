@@ -12,16 +12,9 @@ namespace Polygons
     /// </summary>
     public abstract class Shape
     {
-        protected int width;
-        protected int height;
+        public abstract void CalculateSurface();
 
-        protected int Width { get; set; }
-        protected int Height { get; set; }
-
-
-
-        protected abstract void CalculateSurface();
-        
+        public abstract void CalculateArea();
         
     }
 }
