@@ -250,3 +250,6 @@ ModelManifest.xml
 /OOPAndPatterns/BabyStore/BabyStore/Scripts
 /OOPAndPatterns/BabyStore/BabyStore/fonts
 /OOPAndPatterns/BabyStore/BabyStore/Content
+*.css
+/AspProjects/MvcMovie/src/MvcMovie/wwwroot/lib/bootstrap/dist/fonts
+/AspProjects/MvcMovie/src/MvcMovie/wwwroot/lib/jquery-validation
