@@ -36,41 +36,8 @@ namespace ConsoleApplication3
         {
             this.Name = Name;
             this.lastName = lastName;
+            this.Age = Age;
         }
-        static void Main(string[] args)
-        {
-
-            Student Boris = new ConsoleApplication3.Student();
-            //Boris.Age = 9;
-            //Boris.Name = "Andrew";
-            Console.WriteLine(Boris.Name);
-            SortSample();
-            Console.ReadLine();
-        }
-
-        //write a method that for a given array of students finds those,
-        /// whose first name is before their last one in alphabetical order.
-        static void SortSample()
-        {
-            List<Student> School = new List<Student>() {
-
-                 new Student("member1","zember1LastName"),
-                 new Student("Anne", "WitterLastName"),
-                 new Student("Soccerman" , "Figo",78)
-            };
-
-            ///Linq query : foreach student in school array , find student whose first name is alphabetically before lastname
-            var StudentsWithFirst = from student in School
-                                                  where student.Name[0] < student.lastName[0]
-                                                  select student;
-
-            foreach(var item in StudentsWithFirst)
-            {
-                Console.WriteLine();
-                Console.WriteLine(item.Name + " " + item.lastName);
-            }
-
-            
-        }
+       
     }
 }
