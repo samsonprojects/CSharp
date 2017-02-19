@@ -29,23 +29,52 @@ namespace ConsoleApplication2
             {
                 throw new ApplicationException("Invalid enumeration values type , must be of type INT", e);
             }
-
             return sum;
-            
         }
 
         public static int Min(this IEnumerable<int> enumeration)
         {
-            int min = 0;
-            try
+            List<int> array = enumeration.ToList();
+            int smallest = array[0];
+            foreach(int num in array)
             {
-
+                if (num < smallest)
+                {
+                    smallest = num;
+                }
             }
+            return smallest;
+        }
+
+        public static int Max(this IEnumerable<int> enumeration)
+        {
+            List<int> array = enumeration.ToList();
+            int maximum = array[0];
+            foreach(int num in array)
+            {
+                if(num > maximum)
+                {
+                    maximum = num;
+                }
+            }
+            return maximum;
+        }
+
+        public static int Average(this IEnumerable<int> enumeration)
+        {
+            List<int> array = enumeration.ToList();
+            int Average = array.Sum() / array.Count;
+            return Average;
+            
+
+            
         }
         static void Main(string[] args)
         {
             List<int> numbers = new List<int> { 4, 5, 6, 8, 9, 3, 2 };
-            Console.Write(numbers.Sum());
+            Console.WriteLine("Sum of number is: "+numbers.Sum());
+            Console.WriteLine("Minimal number is: "+numbers.Min());
+            Console.WriteLine("Average is: "+numbers.Average());
             Console.ReadLine();
         }
     }
